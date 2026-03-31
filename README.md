@@ -13,14 +13,11 @@ It enables users to interact with **unstructured PDF documents** using natural l
 ## 📸 Project Preview
 
 ### 🖥️ Application Output
-![App UI](./assets/output.png)
-
 *Modern Streamlit interface powered by AWS Bedrock models.*
 
 ---
 
 ### 🔄 System Architecture (RAG Pipeline)
-![Flowchart](./assets/flowchart.png)
 
 *End-to-end pipeline: Ingestion → Embedding → Storage → Retrieval → Generation*
 
@@ -56,19 +53,22 @@ It enables users to interact with **unstructured PDF documents** using natural l
 ---
 
 ## 📂 Project Structure
+
+```bash
 NovaArchive-AI/
 │
-├── data/ # Input PDFs
-├── chroma_db/ # Vector database (auto-generated)
-├── assets/ # Images (flowchart + output)
-│ ├── flowchart.png
-│ └── output.png
+├── data/                 # Input PDFs
+├── chroma_db/            # Vector database (auto-generated)
+├── assets/               # Images (flowchart + output)
+│   ├── flowchart.png
+│   └── output.png
 │
-├── app.py # Streamlit app (UI + query handling)
-├── ingest.py # PDF ingestion + embedding pipeline
-├── requirements.txt # Dependencies
-├── README.md # Documentation
+├── app.py                # Streamlit app (UI + query handling)
+├── ingest.py             # PDF ingestion + embedding pipeline
+├── requirements.txt      # Dependencies
+├── README.md             # Documentation
 └── .gitignore
+```
 
 
 ## 🚀 Getting Started
